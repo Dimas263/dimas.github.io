@@ -35,8 +35,6 @@
 <!-- main header -->
 <header class="yb-main-header" id="main-header">
 
-    <button id="goFS">Go fullscreen</button>
-
     <!-- home section -->
     <div class="yb-full-height " id="home">
 
@@ -378,15 +376,7 @@
         }
     });
 </script>
-<script>
-  var goFS = document.getElementById("goFS");
-  goFS.addEventListener("click", function() {
-      
-   const elem = document.documentElement;
-   if (elem.requestFullscreen) {elem.requestFullscreen()}
-   
-  }, false);
-</script>
+
 </body>
 
 </html>
