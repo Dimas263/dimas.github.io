@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap">
     <link rel="stylesheet" href="assets/css/uikit-custom.min.css" />
     <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/whatsapp/floating-wpp.min.css">
 </head>
 
 <body id="body-app" oncontextmenu="return false;">
@@ -65,7 +66,13 @@
 
     <!-- main menu -->
     <nav class="yb-main-menu " id="main-menu">
+
         <div class="uk-container" data-uk-navbar>
+
+            <!-- whatsapp widget -->
+            <div id="whatsapp"></div>
+            <!-- end whatsapp widget -->
+
             <div class="uk-navbar-left">
                 <a class="yb-logo uk-navbar-item uk-logo" href="index.html"><span>Dimas</span></a>
             </div>
@@ -147,6 +154,7 @@
                                 <li><a data-uk-filter-control=".data-android">Android</a></li>
                                 <li><a data-uk-filter-control=".data-web">Web</a></li>
                                 <li><a data-uk-filter-control=".data-desktop">Desktop</a></li>
+                                <li><a data-uk-filter-control=".data-game">Game</a></li>
                             </ul>
                             <ul class="js-filter uk-child-width-1-2  uk-grid-small  " data-uk-grid data-uk-lightbox="animation: fade;  toggle: .yb-lightbox">
                                 <li class="data-android ">
@@ -160,13 +168,13 @@
                                                     <a href="work/android/deliverylaundry/deliverylaundry.gif" class="yb-lightbox uk-transition-slide-left" data-caption="Aplikasi Pemesanan Laundry Dengan Flutter Dan Firebase">
                                                         <span data-uk-icon="icon:plus; ratio:1.2"></span>
                                                     </a>
-                                                    <a href="work/android/deliverylaundry/deliverylaundry.html" class="uk-transition-slide-right show-portfolio">
+                                                    <a href="https://www.github.com/dimas263/deliverylaundry" class="uk-transition-slide-right">
                                                         <span data-uk-icon="icon:link; ratio:1.2"></span>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="work/android/deliverylaundry/deliverylaundry.html" class="show-portfolio">
+                                        <a href="https://www.github.com/dimas263/deliverylaundry" class=" ">
                                             <div class="yb-work-item-title">
                                                 <h5>Delivery Laundry</h5>
                                                 <span>Android</span>
@@ -185,13 +193,13 @@
                                                     <a href="work/android/pendaftaranpasien/pendaftaranpasien.gif" class="yb-lightbox uk-transition-slide-left" data-caption="Aplikasi Pendaftaran Pasien Dengan Flutter Dan Firebase">
                                                         <span data-uk-icon="icon:plus; ratio:1.2"></span>
                                                     </a>
-                                                    <a href="work/android/pendaftaranpasien/pendaftaranpasien.html" class="uk-transition-slide-right show-portfolio">
+                                                    <a href="https://www.github.com/dimas263/aplikasi_pendaftaran_pasien" class="uk-transition-slide-right">
                                                         <span data-uk-icon="icon:link; ratio:1.2"></span>
                                                     </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <a href="work/android/pendaftaranpasien/pendaftaranpasien.html" class="show-portfolio">
+                                        <a href="https://www.github.com/dimas263/aplikasi_pendaftaran_pasien" class=" ">
                                             <div class="yb-work-item-title">
                                                 <h5>Pendaftaran Pasien</h5>
                                                 <span>Android</span>
@@ -353,6 +361,26 @@
 <!-- js -->
 <script src="assets/js/plugins.min.js"></script>
 <script src="assets/js/app.js"></script>
+<script type="text/javascript" src="assets/whatsapp/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="assets/whatsapp/floating-wpp.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#whatsapp').floatingWhatsApp({
+            position: 'right',
+            size: '65px',
+            boxShadow:"10px 20px 80px blue",
+            phone: '6285811379583',
+            popupMessage: 'Hi, Apakah ada yang bisa saya bantu?',
+            message: " ",
+            showPopup: true,
+            showOnIE: true,
+            headerTitle: 'Obrolan Dengan Dimas',
+            headerColor: '#25D366',
+            backgroundColor: '#25D366',
+            buttonImage: '<img src="assets/whatsapp/whatsapp.svg" />'
+        });
+    });
+</script>
 <script>
     document.onkeydown = function(e) {
         if (e.ctrlKey &&
