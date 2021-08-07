@@ -1,7 +1,8 @@
 # Dimas263.github.io
 Website Personal
-.
-<img src="assets/img/dimas263.gif" alt="alt text" width="150"/>
+
+# Tampilan
+<img src="assets/img/dimas263.gif" alt="alt text" width="300"/>
 
 # kunjungi web page saya
 https://dimas263.github.io
