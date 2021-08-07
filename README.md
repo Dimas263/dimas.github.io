@@ -4,7 +4,7 @@ Website Personal
 # Tampilan
 <img src="assets/img/dimas263.gif" alt="alt text" width="600"/>
 
-# kunjungi web page saya
+# Web page
 https://dimas263.github.io
 
 # LICENSE
